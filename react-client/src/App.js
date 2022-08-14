@@ -1,11 +1,8 @@
-import "./sass/App.scss";
+// import "./sass/App.scss";
+import Home from "./Pages/Home";
 
 function App() {
-  return (
-    <div>
-      
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

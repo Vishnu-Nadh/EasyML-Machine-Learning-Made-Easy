@@ -3,20 +3,44 @@
 :root {
   // COLORS
   --color-primary: #ed1e69;
-  --color-secondary: #667eea;
-  --color-teritiary: #662d8c;
-  --color-teritiary_var: #764ba2;
+  --color-primary-light: #f8a5c3;
+  --color-primary-xtra-light: #fde9f0;
+  --color-teritiary: #667eea;
+  --color-secondary: #662d8c;
+  --color-secondary_var: #764ba2;
+
+  --color-white: #ffffff;
 
   --gradient-primary: linear-gradient(
     to top right,
-    var(--color-teritiary),
+    var(--color-secondary),
     var(--color-primary)
   );
   --gradient-secondary: linear-gradient(
     to top right,
-    var(--color-teritiary_var),
+    var(--color-secondary_var),
     var(--color-secondary)
   );
 
+  // FONT
   --font-default: "Quicksand", sans-serif;
+  --xtra-bold: 700;
+  --bold: 600;
+  --semibold: 500;
+  --light: 400;
+
+  --fs-xs: 1.4rem;
+  --fs-sm: 1.6rem;
+  --fs-md: 2.4rem;
+  --fs-lg: 4rem;
+  --fs-xl: 6rem;
+
+  // SHADOWS
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }

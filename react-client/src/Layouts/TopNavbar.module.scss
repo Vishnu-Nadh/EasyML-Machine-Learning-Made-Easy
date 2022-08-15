@@ -1,0 +1,14 @@
+.topnav {
+  display: flex;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: var(--color-white);
+
+  &__items {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+  }
+}

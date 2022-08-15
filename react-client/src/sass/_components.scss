@@ -1,0 +1,74 @@
+@use "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.heading-primary {
+  font-size: var(--fs-xl);
+  font-weight: var(--xtra-bold);
+  @include mixins.GradientText(var(--gradient-primary));
+}
+
+.primary-text {
+  font-size: var(--fs-md);
+  text-align: center;
+  font-weight: var(--bold);
+  color: var(--color-secondary);
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  @include mixins.GradientText(var(--gradient-primary));
+}
+
+.btn-primary {
+  font-size: var(--fs-sm);
+  font-weight: var(--xtra-bold);
+  color: var(--color-secondary);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+  border: 2px solid transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-primary-light);
+    box-sizing: border-box;
+    color: var(--color-white);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn-secondary {
+  &:link,
+  &:visited {
+    background-color: var(--color-primary);
+    text-decoration: none;
+    padding: 0.6rem 1.8rem;
+    font-size: var(--fs-sm);
+    color: var(--color-white);
+    font-weight: var(--semibold);
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.5s;
+    box-shadow: var(--shadow-xs);
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+    // @include mixins.GradientText(var(--gradient-primary));
+  }
+
+  &:active {
+    background-color: var(--color-primary-xtra-light);
+    box-shadow: var(--shadow-xs);
+  }
+}

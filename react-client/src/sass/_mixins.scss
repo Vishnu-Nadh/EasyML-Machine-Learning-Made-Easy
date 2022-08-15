@@ -1,0 +1,13 @@
+@mixin centerItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin GradientText($gradient) {
+  background-image: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}

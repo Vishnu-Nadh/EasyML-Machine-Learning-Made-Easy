@@ -7,15 +7,15 @@ const TopNavbar = () => {
     <nav className={styles.topnav}>
       <h2 className="logo">EasyML</h2>
       <div className={styles.topnav__items}>
-        <a className={styles.topnav__item} href="#">
+        <a className="btn-secondary" href="#">
           Log In
         </a>
-        <a className={styles.topnav__item} href="#">
+        <a className="btn-secondary" href="#">
           Register
         </a>
-        <a className={styles.topnav__item} href="#">
+        {/* <a className="btn-secondary" href="#">
           Log out
-        </a>
+        </a> */}
       </div>
     </nav>
   );

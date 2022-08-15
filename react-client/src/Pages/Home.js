@@ -8,7 +8,7 @@ import React from "react";
 const Home = () => {
   return (
     <Fragment>
-      <TopNavbar />
+      {/* <TopNavbar /> */}
       <main className={styles.hero}>
         <div className={styles.hero__content}>
           <h1 className="heading-primary">EasyML</h1>

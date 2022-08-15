@@ -7,6 +7,12 @@
   @include mixins.GradientText(var(--gradient-primary));
 }
 
+.heading-secondary {
+  font-size: var(--fs-md);
+  font-weight: var(--xtra-bold);
+  color: var(--color-white);
+}
+
 .primary-text {
   font-size: var(--fs-md);
   text-align: center;
@@ -46,6 +52,7 @@
 }
 
 .btn-secondary {
+  &,
   &:link,
   &:visited {
     background-color: var(--color-primary);
@@ -53,18 +60,45 @@
     padding: 0.6rem 1.8rem;
     font-size: var(--fs-sm);
     color: var(--color-white);
-    font-weight: var(--semibold);
+    font-weight: var(--bold);
     border-radius: 50px;
     display: inline-block;
     transition: all 0.5s;
     box-shadow: var(--shadow-xs);
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: var(--color-white);
     color: var(--color-primary);
     box-shadow: var(--shadow-sm);
-    // @include mixins.GradientText(var(--gradient-primary));
+  }
+
+  &:active {
+    background-color: var(--color-primary-xtra-light);
+    box-shadow: var(--shadow-xs);
+  }
+}
+
+.btn-form {
+  margin-top: 1rem;
+  background-color: var(--color-primary-var);
+  padding: 0.6rem 1.8rem;
+  font-size: var(--fs-sm);
+  color: var(--color-white);
+  font-weight: var(--xtra-bold);
+  letter-spacing: 0.8px;
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  transition: all 0.5s;
+  box-shadow: var(--shadow-xs);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-primary-xtra-light);
+    box-shadow: var(--shadow-sm);
   }
 
   &:active {

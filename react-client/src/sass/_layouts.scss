@@ -1,0 +1,22 @@
+@use "./mixins";
+
+.auth-layout {
+  display: flex;
+  height: calc(100vh - 7rem);
+}
+
+.form-section {
+  @include mixins.centerItem;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  background-image: var(--gradient-secondary);
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2rem;
+}
+
+.svg-section {
+  @include mixins.centerItem;
+  width: 50%;
+  //   background-color: var(--color-primary-xtra-light);
+}

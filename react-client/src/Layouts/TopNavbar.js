@@ -1,21 +1,34 @@
 import styles from "./TopNavbar.module.scss";
-
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const TopNavbar = () => {
   return (
     <nav className={styles.topnav}>
-      <h2 className="logo">EasyML</h2>
+      <Link to="/">
+        <h2 className="logo">EasyML</h2>
+      </Link>
       <div className={styles.topnav__items}>
-        <a className="btn-secondary" href="#">
+        <NavLink
+          // className="btn-secondary"
+          className={({ isActive }) =>
+            isActive ? `${"active"} ${"btn-secondary"}` : "btn-secondary"
+          }
+          to="/login"
+        >
           Log In
-        </a>
-        <a className="btn-secondary" href="#">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${"active"} ${"btn-secondary"}` : "btn-secondary"
+          }
+          to="/register"
+        >
           Register
-        </a>
-        {/* <a className="btn-secondary" href="#">
+        </NavLink>
+        {/* <NavLink className="btn-secondary" to="/">
           Log out
-        </a> */}
+        </NavLink> */}
       </div>
     </nav>
   );

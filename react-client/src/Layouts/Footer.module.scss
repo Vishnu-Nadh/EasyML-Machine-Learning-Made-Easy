@@ -1,4 +1,5 @@
 .footer {
+  border-top: 0.5px solid var(--color-primary-light);
   position: sticky;
   top: 100%;
   height: 2.4rem;
@@ -8,8 +9,8 @@
   align-items: center;
   padding: 0 3rem;
   font-size: var(--fs-xs);
-  background-color: var(--color-primary-xtra-light);
-  color: var(--color-secondary);
+  background-color: var(--color-primary-var);
+  color: var(--color-primary-light);
   font-weight: var(--semibold);
 
   &__link {
@@ -23,8 +24,7 @@
 
     &:hover,
     &:active {
-      color: var(--color-primary);
+      color: var(--color-white);
     }
   }
 }
-

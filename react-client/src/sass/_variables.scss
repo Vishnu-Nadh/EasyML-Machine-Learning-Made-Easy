@@ -3,11 +3,12 @@
 :root {
   // COLORS
   --color-primary: #ed1e69;
+  --color-primary-var: #ad2579;
   --color-primary-light: #f8a5c3;
   --color-primary-xtra-light: #fde9f0;
   --color-teritiary: #667eea;
   --color-secondary: #662d8c;
-  --color-secondary_var: #764ba2;
+  --color-secondary-var: #764ba2;
 
   --color-white: #ffffff;
 
@@ -17,8 +18,8 @@
     var(--color-primary)
   );
   --gradient-secondary: linear-gradient(
-    to top right,
-    var(--color-secondary_var),
+    to bottom right,
+    var(--color-primary),
     var(--color-secondary)
   );
 

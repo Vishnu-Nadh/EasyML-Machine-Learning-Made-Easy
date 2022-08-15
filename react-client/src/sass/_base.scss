@@ -62,7 +62,14 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
 }
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 /*
   8. Avoid text overflows
 */
@@ -107,4 +114,10 @@ html:focus-within {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
